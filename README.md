@@ -20,11 +20,12 @@ We do the same search for the images on the Covid set. First we have a healthy l
 
 Finally, we have an image of an infected lung misclassified as healthy. In this case, we see the lungs edges being detected, half being positively relevant and the other half negatively relevant. The trachea is also shown as positively relevant. However, we also see the circular structures seen before, which are positively relevant as well. This seems to contradict what we saw on the figure above to the right. Once again, we do not venture to say whether these structures are actually relevant or not due to lack of knowledge and training on reading these images. 
 
-![Misclasified](https://user-images.githubusercontent.com/29287072/158023009-bbb48885-69ab-4a49-aac5-5117320c3b0e.png)
+![image](https://user-images.githubusercontent.com/29287072/158023262-7488b463-6a4e-4918-9c41-4e65bc8bcb82.png)
 
 What we take from this experience is that on the first dataset, we have images being incorrectly classified, but the features that we want the network to learn are being detected, i.e., the tumours. However, on the second dataset, we find contradictory features being used to classify the images. What’s interesting about this is that the brain MRI scans has a worse performance on the test set than the chest CT scans. This leads us to the question whether there is a correlation between the performance of a network and it learning important features. To do so, layer wise relevance propagation is a good tool as it allows us to see which features are being used to classify and which are guiding the network to a different classification. 
 
-This project lead to the M. Sc. Thesis which can be found in this [repository](<https://github.com/martingorosito/Accuracy_and_detected_features>)
+This project lead to the M. Sc. Bionics Thesis at Hochschule Rhein Waal, which can be found in this [repository](<https://github.com/martingorosito/Accuracy_and_detected_features>)
+
 ### Links
 [Montavon, G., Binder, A., Lapuschkin, S., Samek, W., & Muller, KR. (2019). Layer-Wise Relevance Propagation: An Overview.](<https://link.springer.com/chapter/10.1007%2F978-3-030-28954-6_10>)
 
